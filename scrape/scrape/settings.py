@@ -13,8 +13,9 @@ SPIDER_MODULES = ['scrape.spiders']
 NEWSPIDER_MODULE = 'scrape.spiders'
 
 ITEM_PIPELINES = {
-  "scrape.pipelines.MongoDBPipeline": 500
+  "mongodb_crawler.pipelines.MongoDBPipeline": 500
 }
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrape (+http://www.yourdomain.com)'
 
