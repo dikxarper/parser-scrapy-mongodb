@@ -9,3 +9,5 @@ Go to the `scrape` folder and start the crawler
 cd scrape
 scrapy crawl quotes -s MONGO_URI="<CONN_STRING>" -s MONGO_DATABASE="scrapy"
 ```
+
+Open your `scrapy` database with Compass, there should be 110 documents in the `scrapy_items` collection.
