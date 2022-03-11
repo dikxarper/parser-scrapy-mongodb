@@ -1,7 +1,7 @@
 # Get started
 Install dependencies
 ```
-python -m pip install -f requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 Start the crawler
