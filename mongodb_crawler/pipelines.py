@@ -1,6 +1,6 @@
 import pymongo
 import sys
-from .items import QuoteItem
+from .items import BookItem
 
 class MongoDBPipeline:
 
@@ -15,7 +15,7 @@ class MongoDBPipeline:
     def from_crawler(cls, crawler):
         return cls(
             mongodb_uri=crawler.settings.get('MONGODB_URI'),
-            mongodb_db=crawler.settings.get('MONGODB_DATABASE', 'items')
+            mongodb_db=crawler.settings.get('MONGODB_DATABASE', 'scrapy')
         )
 
     def open_spider(self, spider):
@@ -28,6 +28,6 @@ class MongoDBPipeline:
         self.client.close()
 
     def process_item(self, item, spider):
-        data = dict(QuoteItem(item))
+        data = dict(BookItem(item))
         self.db[self.collection].insert_one(data)
         return item

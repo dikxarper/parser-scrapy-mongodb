@@ -1,6 +1,9 @@
 import scrapy
 
-class QuoteItem(scrapy.Item):
+class BookItem(scrapy.Item):
     author = scrapy.Field()
-    text = scrapy.Field()
-    tags = scrapy.Field()
+    name = scrapy.Field()
+    new_price = scrapy.Field()
+    cover = scrapy.Field()
+    old_price = scrapy.Field()
+    label = scrapy.Field()

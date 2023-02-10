@@ -20,7 +20,10 @@ ITEM_PIPELINES = {
 #USER_AGENT = 'mongodb_crawler (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
+
+# Dupefilter_class
+DUPEFILTER_CLASS = 'scrapy.dupefilters.BaseDupeFilter'
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
