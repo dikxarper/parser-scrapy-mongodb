@@ -1,6 +1,6 @@
 # MongoDB & Scrapy Demonstration
 
-This project was created at the Advanced Databases (NoSQL) at Astana IT University.
+This project was created for Advanced Databases (NoSQL) course at Astana IT University.
 
 ## Get started
 
