@@ -1,29 +1,29 @@
 # MongoDB & Scrapy Demonstration
 
-This project demonstrates how to use Scrapy to scrape data from a website and store it in a MongoDB database. You can follow the accompanying tutorial to [Build a Web Scraper with MongoDB](https://www.mongodb.com/basics/how-to-use-mongodb-to-store-scraped-data).
+This project was created at the Advanced Databases (NoSQL) at Astana IT University.
 
 ## Get started
 
 Clone the repository:
 
 ```
-git clone git@github.com:mongodb-developer/scrapy.git
+git clone git@github.com/dikxarper/parser-scrapy-mongodb
 cd scrapy
 ```
 
 Install dependencies:
+
 ```
 python -m pip install -r requirements.txt
 ```
 
 Go to the `scrape` folder and start the crawler:
+
 ```
 cd mongodb_crawler
-scrapy crawl quotes -s MONGO_URI="<CONN_STRING>" -s MONGO_DATABASE="scrapy"
+scrapy crawl books -s MONGO_URI="<CONN_STRING>" -s MONGO_DATABASE="DATABASE_NAME"
 ```
 
-Open your `scrapy` database with Compass, there should be 110 documents in the `scrapy_items` collection.
+## Source
 
-## Disclaimer
-
-Use at your own risk; not a supported MongoDB product
+MongoDB & Scrapy Demonstration: https://github.com/mongodb-developer/scrapy
